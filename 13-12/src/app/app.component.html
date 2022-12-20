@@ -34,10 +34,8 @@
           <textarea class="message" name="message" id="message" [(ngModel)]="message"></textarea>
         </label>
         <br><br>
-        <label>
-          <input type="submit" value="submit" id="submit" name="submit" class="submit" [disabled]="!form.form.valid">
+          <input type="submit" value="submit" id="submit" name="submit" class="submit" [disabled]="!form.form.valid" (click)="onSubmit()">
           <input type="button" class="reset" style="background-color: red" value="reset" id="reset" name="reset" (click)="form.resetForm()">
-        </label>
-    </div>
+      </div>
   </form> 
 </html>
